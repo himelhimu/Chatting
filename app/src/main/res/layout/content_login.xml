@@ -54,37 +54,37 @@
                 android:text="Sign In"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:id="@+id/button2" />
+                android:id="@+id/sign_in" />
 
             <Button
                 android:text="SignIn with Facebook"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:id="@+id/button3" />
+                android:id="@+id/facebook_sign_in" />
 
             <Button
                 android:text="Google"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:id="@+id/button4" />
+                android:id="@+id/google_sign_in" />
 
             <Button
                 android:text="Twitter"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:id="@+id/button5" />
+                android:id="@+id/twitter_sign_in" />
 
             <Button
                 android:text="GitHub"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:id="@+id/button6" />
+                android:id="@+id/github_sign_in" />
 
             <TextView
                 android:text="SignUp"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:id="@+id/textView" />
+                android:id="@+id/sign_up" />
 
 
         </LinearLayout>
