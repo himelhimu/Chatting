@@ -1,5 +1,8 @@
 package com.example.sabbir.chatting.model.util;
 
+import android.content.Context;
+import android.content.SharedPreferences;
+
 import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
 
@@ -8,7 +11,7 @@ import com.google.firebase.database.FirebaseDatabase;
  */
 
 public class LibraryClass {
-    public static String PREF="";
+    public static String PREF="com.example.sabbir.chatting.PREF";
     private static DatabaseReference reference;
 
     private LibraryClass()
@@ -23,13 +26,16 @@ public class LibraryClass {
         return reference;
     }
 
-    public static void saveSP()
-    {
-
+    static public void saveSP(Context context, String key, String value ){
+        SharedPreferences sp = context.getSharedPreferences(PREF, Context.MODE_PRIVATE);
+        sp.edit().putString(key, value).apply();
     }
 
-    public static String getSP()
-    {
-        return null;
+    static public String getSP(Context context, String key ){
+        SharedPreferences sp = context.getSharedPreferences(PREF, Context.MODE_PRIVATE);
+        String token = sp.getString(key, "");
+        return( token );
     }
+
+
 }
